@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felican - Explorando Caniformes y Feliformes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a2;
+            background-color: ;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .text-with-image {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .text-with-image img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .text-with-image div {
+            width: 40%;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .comment-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #141414
+            border-radius: 5px;
+            color: white; /* Texto en color blanco */
+        }
+        .comment-section h3 {
+            margin-bottom: 10px;
+        }
+        .comment-form {
+            margin-bottom: 20px;
+        }
+        .comment-form input,
+        .comment-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .comment-form textarea {
+            resize: vertical;
+        }
+        .comment-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0d1a2b; /* Azul oscuro */
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #0d1a2b; /* Azul oscuro */
+            border-radius: 5px;
+            text-align: center;
+            color: white; /* Texto en color blanco */
+        }
+        .contact-info h3 {
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            overflow-x: auto; /* Para permitir el desplazamiento horizontal en dispositivos pequeños */
+            padding-bottom: 20px;
+        }
+        .video-container iframe {
+            width: 45%; /* Ajustar el ancho de los videos */
+            max-width: 600px; /* Máximo ancho permitido */
+            height: 300px; /* Altura fija */
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="inicio">
+    <header>
+        <h1>Felican</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="feliformes.html">Feliformes</a>
+            <a href="caniformes.html">Caniformes</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="text-with-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqLrljTE3kDVH9LZ_tx2Uejy5IhKqAC4fHA&s" alt="Animalflix Principal">
+            <div>
+                <h2 class="section-title">Bienvenidos a Felican</h2>
+                <p>¡Descubre el fascinante mundo de los caniformes y los feliformes en nuestro sitio web Felican! Sumérgete en la diversidad
+                    única de estos dos subórdenes de carnívoros, explorando desde los imponentes lobos y osos hasta los ágiles leopardos y
+                    poderosos leones. En Felican, te invitamos a explorar cómo estas especies han evolucionado para adaptarse a una variedad
+                    de hábitats y roles ecológicos, desde las vastas llanuras hasta las densas junglas y los helados paisajes árticos.
+                    Los caniformes, conocidos por su variedad morfológica y adaptaciones para la caza y la exploración, desempeñan roles cruciales como
+                    depredadores tope en numerosos ecosistemas. Descubre cómo estas criaturas influyen en la salud y el equilibrio de sus entornos,
+                    desde la regulación de poblaciones hasta la configuración de comunidades biológicas enteras.
+                    Por otro lado, los feliformes te sorprenderán con su estructura ágil y especializada para la caza. Desde los majestuosos leones
+                    hasta los astutos gatos domésticos, estos carnívoros exhiben una anatomía diseñada para la velocidad y la precisión en la
+                    caza, reflejando su éxito como depredadores dominantes en una variedad de hábitats.
+                    En Felican, nuestro objetivo es no solo presentarte estas fascinantes criaturas a través de imágenes impresionantes y datos cautivadores,
+                    sino también profundizar en su importancia ecológica y evolutiva. Únete a nosotros para explorar y aprender sobre estos
+                    icónicos carnívoros que continúan asombrando y desafiando nuestra comprensión del reino animal.</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P0E0mR6-BTM" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/O2-afs44x4g" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="comment-section">
+            <h3>Comentarios</h3>
+            <form class="comment-form">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <br>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                <br>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                <br>
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p><strong>Teléfono:</strong> +1 (234) 567-8901</p>
+            <p><strong>Correo electrónico:</strong> info@animalflix.com</p>
+        </div>
+    </section>
+</body>
+</html>    
